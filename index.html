@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NFT Preview Card — Frontend Mentor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+</head>
+<body>
+  <main class="page" role="main">
+    <article class="card" aria-labelledby="nft-title">
+      <figure class="card__media">
+        <img src="images/image-equilibrium.jpg" alt="Abstract geometric artwork — Equilibrium" class="card__img" width="600" height="600">
+        <button class="card__view" aria-label="Open preview" title="View">
+          <!-- eye icon -->
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+            <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/>
+          </svg>
+        </button>
+      </figure>
+
+      <div class="card__content">
+        <h1 id="nft-title" class="card__title">Equilibrium #3429</h1>
+        <p class="card__desc">Our Equilibrium collection promotes balance and calm through geometric forms.</p>
+
+        <div class="card__meta" aria-hidden="false">
+          <div class="meta__item meta__price" title="Price in ETH">
+            <svg class="meta__icon" width="11" height="18" viewBox="0 0 11 18" fill="none" aria-hidden="true">
+              <path d="M5.5 0v6.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0 8.5L5.5 6 11 8.5 5.5 12 0 8.5z" fill="currentColor"/>
+            </svg>
+            <span class="meta__text">0.041 ETH</span>
+          </div>
+
+          <div class="meta__item meta__time" title="Time left">
+            <svg class="meta__icon" width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.2"/>
+              <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="meta__text">3 days left</span>
+          </div>
+        </div>
+
+        <hr class="card__divider" />
+
+        <div class="card__author">
+          <img src="images/icon5.jpg" alt="Jules Wyvern avatar" class="author__avatar" width="40" height="40">
+          <p class="author__text">Creation of <a href="#" class="author__link">Era of Nyx</a></p>
+        </div>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
